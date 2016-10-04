@@ -1,0 +1,15 @@
+development:
+ adapter: mysql2
+ encoding: utf8
+ database: telehub_dev
+ pool: 5
+ username: root #root
+ password:
+
+test:
+ adapter: mysql2
+ encoding: utf8
+ database: telehub_test
+ pool: 5
+ username: root #root
+ password:
