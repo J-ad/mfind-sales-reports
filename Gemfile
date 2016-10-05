@@ -21,18 +21,25 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'pry', platform: :mri
+  gem 'pry-rails', '~> 0.3.4'
+  gem 'pry-rescue', '~> 1.4', '>= 1.4.4'
+  gem 'pry-stack_explorer', '~> 0.4.9.2'
 end
 
 group :test do
-  gem 'rspec'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'ffaker', '~> 2.2'
+  gem 'factory_girl_rails', '~> 4.7'
+  gem 'fuubar', '~> 2.2'
 end
 
 group :development do
+  gem 'annotate', '~> 2.7', '>= 2.7.1'
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rubocop', '~> 0.42.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
