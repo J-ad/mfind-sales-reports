@@ -9,8 +9,13 @@ Bundler.require(*Rails.groups)
 
 module MfindSalesReports
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.generators do |g|
+      g.test_framework :rspec
+      g.integration_tool :rspec
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+    end
+
+    config.autoload_paths += Dir["#{config.root}/app/**/"]
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
   end
 end
