@@ -1,0 +1,4 @@
+%h2 Zaimportuj zbiorczy raport
+= form_tag report_imports_path, multipart: true do
+  = file_field_tag :file
+  = submit_tag "Import"
