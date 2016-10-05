@@ -36,6 +36,7 @@ group :test do
   gem 'ffaker', '~> 2.2'
   gem 'factory_girl_rails', '~> 4.7'
   gem 'fuubar', '~> 2.2'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
 
 group :development do
