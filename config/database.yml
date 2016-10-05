@@ -1,7 +1,7 @@
 development:
  adapter: mysql2
  encoding: utf8
- database: telehub_dev
+ database: sales_reports_dev
  pool: 5
  username: root #root
  password:
@@ -9,7 +9,7 @@ development:
 test:
  adapter: mysql2
  encoding: utf8
- database: telehub_test
+ database: sales_reports_test
  pool: 5
  username: root #root
  password:
