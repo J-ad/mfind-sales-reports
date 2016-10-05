@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+gem 'restforce', '~> 2.4'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
