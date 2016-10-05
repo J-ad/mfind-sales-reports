@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.3.1'
@@ -22,10 +24,11 @@ gem 'restforce', '~> 2.4'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-rails', '~> 0.3.4'
   gem 'pry-rescue', '~> 1.4', '>= 1.4.4'
   gem 'pry-stack_explorer', '~> 0.4.9.2'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem 'binding_of_caller', '~> 0.7.2'
 end
 
 group :test do
