@@ -1,0 +1,2 @@
+class HeadersDictionary < ApplicationRecord
+end
